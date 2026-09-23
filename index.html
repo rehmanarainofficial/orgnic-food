@@ -3,122 +3,295 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <!-- font awesome cdn  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
-      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    <meta
+      name="description"
+      content="Ogani fresh grocery and organic food store."
     />
 
-    <!-- css  -->
+    <title>Ogani | Fresh Organic Grocery</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <!-- navbar  -->
-    <nav>
-      <h1>Ogani</h1>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Shop</a></li>
-        <li><a href="">Departments</a></li>
-        <li><a href="">Pages</a></li>
-        <li><a href="">Journal</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
 
-      <div class="nav-icons">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa-solid fa-right-left"></i>
-        <i class="fa-solid fa-bag-shopping"></i>
+  <body>
+    <!-- ==============================
+         Navbar
+    =============================== -->
+
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <!-- Logo -->
+        <a href="#" class="logo"> Oga<span>ni</span> </a>
+
+        <!-- Navigation -->
+        <ul class="nav-links">
+          <li>
+            <a href="#" class="active">Home</a>
+          </li>
+
+          <li>
+            <a href="#">Shop</a>
+          </li>
+
+          <li>
+            <a href="#">Departments</a>
+          </li>
+
+          <li>
+            <a href="#">Pages</a>
+          </li>
+
+          <li>
+            <a href="#">Journal</a>
+          </li>
+
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Navigation Icons -->
+        <div class="nav-actions">
+          <button type="button" class="nav-icon" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <button type="button" class="nav-icon" aria-label="Wishlist">
+            <i class="fa-regular fa-heart"></i>
+
+            <span class="icon-badge"> 2 </span>
+          </button>
+
+          <button
+            type="button"
+            class="nav-icon compare-icon"
+            aria-label="Compare"
+          >
+            <i class="fa-solid fa-right-left"></i>
+          </button>
+
+          <button type="button" class="nav-icon" aria-label="Shopping cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span class="icon-badge"> 3 </span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          type="button"
+          class="menu-btn"
+          aria-label="Open navigation menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </nav>
 
-    <!-- hero section  -->
-    <header>
-      <div class="head-left">
-        <div class="head-left-top">
-          All departments
-          <i class="fa-solid fa-angle-down"></i>
-        </div>
-        <div class="head-left-bottom">
-          <p>Fresh vegetables</p>
-          <p>Fruit & berries</p>
-          <p>Weekly boxes</p>
-          <p>Juices & drinks</p>
-          <p>Pantry staples</p>
-          <p>Bakery counter</p>
-          <p>Salad & herbs</p>
-        </div>
-      </div>
-      <div class="head-right">
-        <div class="head-right-top">
-          <form>
-            <input type="text" placeholder="What are you looking for?" />
-            <button>SEARCH</button>
-          </form>
-          <div class="head-right-top-right">
-            <i class="fa-solid fa-headset"></i>
-            <div>
-              <p>+1 650 253 0000</p>
-              <span>Support 24/7</span>
+    <!-- ==============================
+         Main
+    =============================== -->
+
+    <main>
+      <!-- ==============================
+           Hero
+      =============================== -->
+
+      <section class="hero container">
+        <!-- Departments -->
+        <aside class="departments">
+          <button type="button" class="department-title">
+            <span class="department-title-left">
+              <i class="fa-solid fa-bars"></i>
+
+              All Departments
+            </span>
+
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+
+          <div class="department-list">
+            <a href="#">
+              <span>Fresh Vegetables</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+
+            <a href="#">
+              <span>Fruit & Berries</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+
+            <a href="#">
+              <span>Weekly Boxes</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+
+            <a href="#">
+              <span>Juices & Drinks</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+
+            <a href="#">
+              <span>Pantry Staples</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+
+            <a href="#">
+              <span>Bakery Counter</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+
+            <a href="#">
+              <span>Salad & Herbs</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+        </aside>
+
+        <!-- Hero Right -->
+        <div class="hero-main">
+          <!-- Search + Support -->
+          <div class="hero-top">
+            <form class="search-form">
+              <div class="search-category">
+                <span>All Categories</span>
+
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+
+              <div class="search-divider"></div>
+
+              <input
+                type="search"
+                placeholder="What are you looking for?"
+                aria-label="Search products"
+              />
+
+              <button type="submit">Search</button>
+            </form>
+
+            <div class="support">
+              <div class="support-icon">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+
+              <div class="support-content">
+                <strong> +1 650 253 0000 </strong>
+
+                <span> Support 24/7 </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Banner -->
+          <div class="hero-banner">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+              <span class="hero-label"> Fresh & Organic </span>
+
+              <h1>
+                Fresh produce,
+                <br />
+                picked this morning
+              </h1>
+
+              <p>
+                Shop farm-fresh fruits, vegetables and organic products
+                delivered directly to your doorstep.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="#" class="primary-btn">
+                  Shop Now
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#" class="secondary-btn"> Explore Products </a>
+              </div>
+            </div>
+
+            <div class="hero-offer">
+              <span>Up To</span>
+
+              <strong> 30% </strong>
+
+              <small> OFF </small>
             </div>
           </div>
         </div>
-        <div class="head-right-bottom">
-          <h1>
-            Fresh produce, <br />
-            picked this morning
-          </h1>
-        </div>
-      </div>
-    </header>
+      </section>
 
-    <!-- features  -->
-    <div class="features">
-      <div class="feat-cart">
-        <div class="icon-box">
-          <i class="fa-solid fa-truck-moving"></i>
-        </div>
-        <div class="feature-content">
-          <p>On every order over $60</p>
-          <p class="slogan">On every order over $60</p>
-        </div>
-      </div>
+      <!-- ==============================
+           Features
+      =============================== -->
 
-      <div class="feat-cart">
-        <div class="icon-box">
-          <i class="fa-brands fa-envira"></i>
-        </div>
-        <div class="feature-content">
-          <p>Certified organic</p>
-          <p class="slogan">Traceable to the farm</p>
-        </div>
-      </div>
+      <section class="features-section">
+        <div class="container">
+          <div class="features">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+              </div>
 
-      <div class="feat-cart">
-        <div class="icon-box">
-          <i class="fa-solid fa-arrow-rotate-left"></i>
-        </div>
-        <div class="feature-content">
-          <p>Fresh guarantee</p>
-          <p class="slogan">Not fresh? We refund it</p>
-        </div>
-      </div>
+              <div class="feature-content">
+                <h3>Free Delivery</h3>
 
-      <div class="feat-cart">
-        <div class="icon-box">
-          <i class="fa-regular fa-headphones"></i>
+                <p>On every order over $60</p>
+              </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-brands fa-envira"></i>
+              </div>
+
+              <div class="feature-content">
+                <h3>Certified Organic</h3>
+
+                <p>Traceable to the farm</p>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-arrow-rotate-left"></i>
+              </div>
+
+              <div class="feature-content">
+                <h3>Fresh Guarantee</h3>
+
+                <p>Not fresh? We refund it</p>
+              </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+
+              <div class="feature-content">
+                <h3>Support 24/7</h3>
+
+                <p>Talk to a real person</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="feature-content">
-          <p>Support 24/7</p>
-          <p class="slogan">Talk to a real person</p>
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
