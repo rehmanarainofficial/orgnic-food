@@ -41,8 +41,38 @@
             <a href="#">Shop</a>
           </li>
 
-          <li>
-            <a href="#">Departments</a>
+          <li class="departments-nav-item">
+            <a href="#" aria-haspopup="true">Departments <i class="fa-solid fa-angle-down"></i></a>
+
+            <div class="departments-mega-menu">
+              <div class="mega-menu-column">
+                <h3>Fresh produce</h3>
+                <a href="#">Vegetables</a>
+                <a href="#">Fruit</a>
+                <a href="#">Salad &amp; herbs</a>
+              </div>
+
+              <div class="mega-menu-column">
+                <h3>Larder</h3>
+                <a href="#">Pantry staples</a>
+                <a href="#">Oils &amp; vinegars</a>
+                <a href="#">Preserves</a>
+              </div>
+
+              <div class="mega-menu-column">
+                <h3>Chilled</h3>
+                <a href="#">Dairy &amp; eggs</a>
+                <a href="#">Cheese counter</a>
+                <a href="#">Juices</a>
+              </div>
+
+              <div class="mega-menu-column">
+                <h3>Boxes</h3>
+                <a href="#">Weekly veg box</a>
+                <a href="#">Fruit box</a>
+                <a href="#">Recipe boxes</a>
+              </div>
+            </div>
           </li>
 
           <li>
@@ -350,7 +380,7 @@
          Featured products
     =============================== -->
 
-    <section class="featured-products container">
+    <section id="featured-products" class="featured-products container">
       <div class="feature-pro-heading">
         <h1>Featured products</h1>
 
@@ -998,5 +1028,21 @@
         <i class="fa-brands fa-envira"></i>
       </button>
     </footer>
+
+    <script>
+      document.querySelectorAll(".featured-products .feature-product-card").forEach((card) => {
+        card.setAttribute("role", "link");
+        card.setAttribute("tabindex", "0");
+        card.addEventListener("click", () => {
+          window.location.href = "product-details.html";
+        });
+        card.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            window.location.href = "product-details.html";
+          }
+        });
+      });
+    </script>
   </body>
 </html>

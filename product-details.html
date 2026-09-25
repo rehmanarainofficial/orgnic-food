@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Product details for fresh vine-ripened tomatoes." />
+    <title>Ogani | Product Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="./index.html" class="logo">Oga<span>ni</span></a>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#featured-products">Shop</a></li>
+          <li><a href="./index.html#featured-products">Departments</a></li>
+          <li><a href="./index.html#latest-products-title">Journal</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button type="button" class="nav-icon" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button type="button" class="nav-icon" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span class="icon-badge">2</span></button>
+          <button type="button" class="nav-icon" aria-label="Shopping cart"><i class="fa-solid fa-bag-shopping"></i><span class="icon-badge">3</span></button>
+        </div>
+        <a href="./index.html" class="menu-btn" aria-label="Back to home"><i class="fa-solid fa-arrow-left"></i></a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="product-hero-banner">
+        <div class="container">
+          <span>Home &middot; Shop &middot; Fresh produce</span>
+          <h1>Product details</h1>
+        </div>
+      </section>
+
+      <section class="product-details-section container">
+        <div class="product-gallery">
+          <img class="product-gallery-main" src="./images/product-tomatoes.jpg" alt="Vine-ripened tomatoes" />
+          <div class="product-gallery-grid">
+            <img src="./images/product-veg-basket.jpg" alt="Seasonal farm produce" />
+            <img src="./images/cat-vegetables.jpg" alt="Fresh vegetables" />
+            <img src="./images/product-tomatoes.jpg" alt="Tomatoes in a produce crate" />
+          </div>
+        </div>
+
+        <div class="product-detail-panel">
+          <span class="product-farm">Bell Farm</span>
+          <h2>Vine-ripened tomatoes</h2>
+          <div class="detail-rating" aria-label="4.5 out of 5 stars">★★★★<span>★</span> <small>(41 reviews)</small></div>
+          <div class="detail-price"><strong>$4.20</strong><del>$5.60</del></div>
+          <small class="product-weight">500 g</small>
+          <p class="detail-description">Picked at the very end of peak ripeness, these tomatoes are sweet enough to eat like fruit and firm enough for salads.</p>
+          <ul class="detail-features">
+            <li><i class="fa-solid fa-check"></i> Farm fresh delivery</li>
+            <li><i class="fa-solid fa-check"></i> Harvested this week</li>
+            <li><i class="fa-solid fa-check"></i> Organic and locally sourced</li>
+          </ul>
+          <div class="detail-purchase">
+            <label for="quantity">Quantity</label>
+            <input id="quantity" type="number" min="1" value="1" />
+            <button type="button">Add to basket</button>
+          </div>
+          <div class="detail-meta"><span>SKU: OG-TOM-041</span><span>Category: Vegetables</span></div>
+        </div>
+      </section>
+
+      <section class="related-products container" aria-labelledby="related-title">
+        <div class="related-heading">
+          <h2 id="related-title">You may also like</h2>
+          <a href="./index.html#featured-products" class="view-all-button">View all</a>
+        </div>
+        <div class="related-grid">
+          <a class="related-card" href="./product-details.html"><img src="./images/product-strawberries.jpg" alt="English strawberries" /><span>English strawberries</span><strong>$3.90</strong></a>
+          <a class="related-card" href="./product-details.html"><img src="./images/product-oranges.jpg" alt="Navel oranges" /><span>Navel oranges</span><strong>$2.80</strong></a>
+          <a class="related-card" href="./product-details.html"><img src="./images/product-apples.jpg" alt="Russet apples" /><span>Russet apples</span><strong>$2.40</strong></a>
+          <a class="related-card" href="./product-details.html"><img src="./images/product-bananas.jpg" alt="Fairtrade bananas" /><span>Fairtrade bananas</span><strong>$1.60</strong></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <section class="newsletter-section">
+        <div class="newsletter-inner container">
+          <h2>Join the weekly list</h2>
+          <p>Seasonal produce, recipes and offers. One email a week, no more.</p>
+          <form class="newsletter-form"><label class="sr-only" for="detail-email">Email address</label><input id="detail-email" type="email" placeholder="you@example.com" required /><button type="submit">Subscribe</button></form>
+        </div>
+      </section>
+      <div class="footer-bottom container"><p>&copy; 2026 Ogani. A demo storefront &mdash; nothing here is for sale.</p><div class="footer-socials"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></div></div>
+    </footer>
+  </body>
+</html>
