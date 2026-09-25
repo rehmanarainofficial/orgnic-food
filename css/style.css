@@ -872,6 +872,45 @@ button {
 }
 
 /* ==============================
+   Shop by department
+================================ */
+
+.shop-by-department {
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 20px;
+
+  padding-block: 30px;
+}
+.shop-by-department .product-card {
+  flex: 1;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shop-by-department .product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.shop-by-department .product-card .detail {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ==============================
    Large Desktop
 ================================ */
 
@@ -1005,6 +1044,10 @@ button {
   .feature-card:nth-child(2) {
     border-bottom: 1px solid #e2e4de;
   }
+
+  .shop-by-department {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* ==============================
@@ -1090,6 +1133,10 @@ button {
 
   .feature-card {
     min-height: 115px;
+  }
+
+  .shop-by-department {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1279,5 +1326,9 @@ button {
 
   .hero-content h1 {
     font-size: 2rem;
+  }
+
+  .shop-by-department {
+    grid-template-columns: 1fr;
   }
 }
